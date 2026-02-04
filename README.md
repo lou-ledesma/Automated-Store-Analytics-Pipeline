@@ -300,7 +300,7 @@ Automated-Store-Analytics-Pipeline/
 
 ## Author
 
-**Lou Ledesma** | Analytics Engineer
+**Lou Ledesma** | Analytics Engineer | https://www.linkedin.com/in/loubriel-ledesma/
 
 Specialized in data orchestration, ETL pipeline design, and building scalable data infrastructure. This project demonstrates proficiency in workflow automation, containerized deployment, data quality engineering, and production systems design.
 
@@ -317,3 +317,10 @@ This project is provided as-is for educational and reference purposes.
 - **Data Privacy**: Ensure sensitive information (credentials, PII) is managed via environment variables, not committed to version control
 - **Production Readiness**: For production deployments, implement secrets management (AWS Secrets Manager, HashiCorp Vault), upgrade to Celery executor, and implement comprehensive monitoring
 - **Backups**: Configure regular database backups; store configuration files in version-controlled repositories
+
+---
+
+## Disclaimers
+
+1. This project is for educational and analytical purposes. Sports betting involves financial risk. Users should conduct their own analysis and adhere to applicable gambling regulations in their jurisdiction.
+2. README.md file description was generated using Perplexity AI.
