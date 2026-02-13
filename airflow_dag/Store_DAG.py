@@ -76,8 +76,8 @@ with DAG('store_dag', default_args = default_args, schedule_interval = '@daily',
 	# Sending the data files in report format via email
 	t8 = EmailOperator(
 		task_id = 'send_email',
-		to = 'mfermin58@gmail.com',
-		cc = 'loubriel.ledesma@gmail.com',
+		to = 'loubriel.ledesma@gmail.com',
+		cc = 'loudr09@gmail.com',
 		subject = 'Daily Report Generated',
 		html_content= """<h1> Congrats!! Your automated daily report is ready. Please see attached. Thanks! -Automated by Lou Ledesma using Apache Airflow.</h1>""",
 		files =['/usr/local/airflow/store_files_airflow/location_wise_profit_%s.csv' % yesterday_date, '/usr/local/airflow/store_files_airflow/store_wise_profit_%s.csv' % yesterday_date])
@@ -89,3 +89,4 @@ with DAG('store_dag', default_args = default_args, schedule_interval = '@daily',
 
 	# List dependencies
 	t1 >> t2 >> t3 >> t4 >> bonus_task >> t5 >> [t6, t7] >> t8 >> t9
+
